@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    column-gap: 30px;
+}
+
+.products{
+    flex: 2;
+    min-width: 300px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.cart{
+    flex: 1;
+    min-width: 250px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.product-item{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+}
+
+.product-item .product-info p{
+    margin-bottom: 12px;
+}
+
+.product-item .product-info h2 span{
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 18px;
+    color: green;
+}
+
+.product-item .product-info button{
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(0, 255, 102);
+    border-radius: 8px;
+    transition: background-color ease 0.25s;
+}
+
+.product-item .product-info button:hover{
+    background-color: rgb(0, 189, 75);
+}
+
+.product-item .product-info button:active{
+    background-color: rgb(97, 220, 146);
+}
+
+img{
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.quantity-change{
+    width: 118px;
+}
+
+.quantity-change .price{
+    font-size: 20px;
+}
+
+.quantity-change button{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-weight: bold;
+    background-color: aqua;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color ease 0.2s;
+}
+
+.quantity-change span{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.quantity-change button:hover{
+    background-color: rgb(0, 205, 205);
+}
+
+.quantity-change button:active{
+    background-color: rgb(107, 239, 239);
+}
+
+.cart-info .remove{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: rgb(236, 65, 65);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color ease 0.2s;
+}
+
+.cart-info .remove:hover{
+    background-color: rgb(181, 0, 0);
+}
+
+.cart-info .remove:active{
+    background-color: rgb(221, 130, 130);
+}
+
+.pay{
+    display: inline-block;
+    padding: 8px;
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color ease 0.2s;
+}
+
+
+.pay:hover{
+    background-color: rgb(99, 31, 162);
+}
+
+.pay:active{
+    background-color: rgb(168, 107, 224);
+}
+
+.total{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 8px;
+}
