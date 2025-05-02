@@ -1,9 +1,9 @@
 const products = [
-    { id: 1, name: "Wireless Headphones", description: "High-quality noise-cancelling over-ear headphones.", price: 89.99, image: "https://images.unsplash.com/photo-1585386959984-a4155228a1ab?auto=format&fit=crop&w=500&q=80" },
-    { id: 2, name: "Smartwatch", description: "Water-resistant smartwatch with fitness tracking.", price: 129.99, image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=500&q=80" },
-    { id: 3, name: "Gaming Mouse", description: "Ergonomic RGB gaming mouse with 8 programmable buttons.", price: 49.99, image: "https://images.unsplash.com/photo-1587202372775-98973b1f8bfa?auto=format&fit=crop&w=500&q=80" },
-    { id: 4, name: "Mechanical Keyboard", description: "Tactile mechanical keyboard with blue switches.", price: 74.99, image: "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=500&q=80" },
-    { id: 5, name: "4K Monitor", description: "27-inch Ultra HD 4K monitor with ultra-thin bezels.", price: 299.99, image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=500&q=80" }
+    { id: 1, name: "Wireless Headphones", description: "High-quality noise-cancelling over-ear headphones.", price: 89.99, image: "./images/headphone.jpg" },
+    { id: 2, name: "Smartwatch", description: "Water-resistant smartwatch with fitness tracking.", price: 129.99, image: "./images/smartwatch.jpg" },
+    { id: 3, name: "Gaming Mouse", description: "Ergonomic RGB gaming mouse with 8 programmable buttons.", price: 49.99, image: "./images/mouse.jpg" },
+    { id: 4, name: "Mechanical Keyboard", description: "Tactile mechanical keyboard with blue switches.", price: 74.99, image: "./images/keyboard.jpg" },
+    { id: 5, name: "4K Monitor", description: "27-inch Ultra HD 4K monitor with ultra-thin bezels.", price: 299.99, image: "./images/monitor.jpg" }
   ];
 
 const cartItems = [];
@@ -19,7 +19,7 @@ for (let product of products){
     productItemNode.setAttribute('data-id', product.id)
     productItemNode.innerHTML = `
                                 <div class="product-image">
-                                    <img src="" alt="item-image">
+                                    <img src="${product.image}" alt="item-image">
                                 </div>
                                 <div class="product-info">
                                     <h2>${product.name}
@@ -89,7 +89,7 @@ function renderCart(){
             cartItemNode.setAttribute('data-id', item.id);
             cartItemNode.innerHTML = `
                                     <div class="cart-image">
-                                        <img src="" alt="item-image">
+                                        <img src="${item.image}" alt="item-image">
                                         <h4>${item.name}</h4>
                                     </div>
                                     <div class="cart-info">
